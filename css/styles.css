@@ -4,7 +4,7 @@
 
 /* CSS Variables - Light Theme */
 :root {
-    /* Colors */
+    /* Colors - Preserved */
     --background: #ffffff;
     --foreground: #23344E;
     --card: #ffffff;
@@ -13,54 +13,67 @@
     --primary-foreground: #ffffff;
     --secondary: #B0A393;
     --secondary-foreground: #23344E;
-    --muted: #f5f5f5;
-    --muted-foreground: #666666;
+    --muted: #f8f9fa;
+    --muted-foreground: #64748b;
     --accent: #B0A393;
     --accent-foreground: #23344E;
-    --border: #CDCDCD;
+    --border: #e2e8f0;
     --ring: #B0A393;
 
     /* Footer specific */
     --footer-bg: #23344E;
     --footer-text: #ffffff;
-    --footer-muted: #CDCDCD;
+    --footer-muted: #94a3b8;
 
-    /* Typography */
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-serif: 'Garet', 'Inter', sans-serif;
+    /* Typography - Modern Luxury */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Cormorant Garamond', serif;
 
-    /* Spacing */
+    /* Spacing - More breathability */
     --container-max: 1280px;
-    --section-padding: 5rem;
-    --section-padding-lg: 7rem;
+    --section-padding: 4rem;
+    --section-padding-lg: 8rem;
 
-    /* Border Radius */
-    --radius: 0;
-    --radius-sm: 0;
-    --radius-lg: 0;
+    /* Border Radius - Softer look */
+    --radius: 0.5rem;
+    /* 8px */
+    --radius-sm: 0.25rem;
+    /* 4px */
+    --radius-lg: 1rem;
+    /* 16px */
+    --radius-full: 9999px;
+
+    /* Shadows - Depth */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 
     /* Transitions */
-    --transition-fast: 150ms ease;
-    --transition-base: 300ms ease;
-    --transition-slow: 500ms ease;
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Dark Theme */
 .dark {
-    --background: #0a0a0a;
-    --foreground: #fafafa;
-    --card: #0a0a0a;
-    --card-foreground: #fafafa;
+    --background: #0f172a;
+    --foreground: #f8fafc;
+    --card: #1e293b;
+    --card-foreground: #f8fafc;
     --primary: #B0A393;
     --primary-foreground: #23344E;
     --secondary: #23344E;
-    --secondary-foreground: #fafafa;
-    --muted: #262626;
-    --muted-foreground: #a3a3a3;
+    --secondary-foreground: #f8fafc;
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
     --accent: #23344E;
-    --accent-foreground: #fafafa;
-    --border: #262626;
+    --accent-foreground: #f8fafc;
+    --border: #334155;
     --ring: #B0A393;
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.5);
 }
 
 /* ===============================================
@@ -217,22 +230,23 @@ h5,
 h6 {
     font-family: var(--font-serif);
     color: var(--foreground);
-    line-height: 1.3;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.75rem;
+    font-weight: 500;
 }
 
 p {
@@ -302,6 +316,8 @@ a:hover {
     transition: all var(--transition-base);
     cursor: pointer;
     white-space: nowrap;
+    box-shadow: var(--shadow-sm);
+    transform: translateY(0);
 }
 
 .btn i {
@@ -325,7 +341,9 @@ a:hover {
 }
 
 .btn-primary:hover {
-    opacity: 0.9;
+    opacity: 0.95;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 .btn-secondary {
@@ -440,9 +458,10 @@ input[type="checkbox"] {
     z-index: 50;
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    background-color: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    transition: all var(--transition-base);
 }
 
 .dark .header {
@@ -682,13 +701,28 @@ input[type="checkbox"] {
 
 /* Mobile Navigation */
 .mobile-nav {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background-color: var(--background);
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0.3s;
+    visibility: hidden;
+    z-index: 49;
     border-top: 1px solid var(--border);
-    padding: 1rem;
+    gap: 1.5rem;
+    overflow-y: auto;
 }
 
 .mobile-nav.active {
-    display: block;
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0s;
 }
 
 @media (min-width: 1024px) {
@@ -699,8 +733,8 @@ input[type="checkbox"] {
 
 .mobile-nav-link {
     display: block;
-    padding: 0.75rem 0;
-    font-size: 1rem;
+    padding: 0.5rem 0;
+    font-size: 1.25rem;
     font-weight: 500;
     color: var(--muted-foreground);
     transition: color var(--transition-base);
@@ -771,7 +805,7 @@ input[type="checkbox"] {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(to right, rgba(35, 52, 78, 0.95), rgba(35, 52, 78, 0.7));
 }
 
 .hero-content {
@@ -883,15 +917,17 @@ input[type="checkbox"] {
 
 .area-card {
     position: relative;
-    padding: 2rem;
+    padding: 2.5rem;
     background-color: var(--card);
     border: 1px solid var(--border);
+    border-radius: var(--radius);
     transition: all var(--transition-base);
 }
 
 .area-card:hover {
     border-color: var(--accent);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
 }
 
 .area-icon {
@@ -1078,12 +1114,15 @@ input[type="checkbox"] {
 .blog-card {
     background-color: var(--card);
     border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
     transition: all var(--transition-base);
 }
 
 .blog-card:hover {
     border-color: var(--accent);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
 }
 
 .blog-card-content {
