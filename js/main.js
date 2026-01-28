@@ -236,33 +236,76 @@ function initContactForm() {
     const form = document.getElementById('contactForm');
     const successMessage = document.getElementById('contactSuccess');
 
-    // Check for success URL parameter (returned from FormSubmit)
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === 'true' && successMessage && form) {
-        if (form.closest('.contact-form-wrapper')) {
-            form.closest('.contact-form-wrapper').style.display = 'none';
-        } else {
-            form.style.display = 'none';
-        }
-        successMessage.style.display = 'flex';
+    // No explicit initialization needed for validation as we use global grecaptcha
 
-        // Re-initialize icons
-        if (typeof lucide !== 'undefined') {
-            lucide.createIcons();
-        }
-
-        // Clean URL
-        window.history.replaceState({}, document.title, window.location.pathname);
-    }
-
-    if (form) {
+    if (form && successMessage) {
         form.addEventListener('submit', function (e) {
-            const consent = form.querySelector('#contactConsent')?.checked;
+            e.preventDefault();
 
+            // Validate Consent
+            const consent = form.querySelector('#contactConsent')?.checked;
             if (!consent) {
-                e.preventDefault();
                 alert('Por favor, aceite os termos de uso de dados.');
+                return;
             }
+
+            // Validate Google reCAPTCHA
+            if (typeof grecaptcha !== 'undefined') {
+                const recaptchaResponse = grecaptcha.getResponse();
+                if (recaptchaResponse.length === 0) {
+                    alert('Por favor, complete a verificação "Não sou um robô".');
+                    return;
+                }
+            } else {
+                console.warn("reCAPTCHA not loaded");
+            }
+
+            // UI Loading State
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Enviando...';
+            submitBtn.disabled = true;
+
+            // Collect Data
+            const formData = new FormData(form);
+
+            // AJAX Submission
+            fetch(form.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Success
+                        if (form.closest('.contact-form-wrapper')) {
+                            form.closest('.contact-form-wrapper').style.display = 'none';
+                        } else {
+                            form.style.display = 'none';
+                        }
+                        successMessage.style.display = 'flex';
+
+                        // Re-initialize icons
+                        if (typeof lucide !== 'undefined') {
+                            lucide.createIcons();
+                        }
+                    } else {
+                        return response.json().then(data => {
+                            throw new Error(data.message || 'Falha no envio');
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('Form Error:', error);
+                    alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.');
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    if (typeof grecaptcha !== 'undefined') {
+                        grecaptcha.reset(); // Reset captcha for retry
+                    }
+                });
         });
     }
 }
