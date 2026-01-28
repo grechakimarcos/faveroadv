@@ -42,6 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Image Protection
     initImageProtection();
+
+    // Cookie Consent
+    initCookieConsent();
 });
 
 // ===============================================
@@ -336,7 +339,6 @@ function debounce(func, wait) {
 }
 
 // Smooth scroll to element
-// Smooth scroll to element
 function scrollToElement(elementId) {
     const element = document.getElementById(elementId);
     if (element) {
@@ -366,5 +368,61 @@ function initImageProtection() {
             e.preventDefault();
             return false;
         }
+    });
+}
+
+// ===============================================
+// COOKIE CONSENT
+// ===============================================
+
+function initCookieConsent() {
+    // Check if consent is already stored
+    if (localStorage.getItem('favero-cookie-consent')) {
+        return;
+    }
+
+    // Create banner HTML
+    const banner = document.createElement('div');
+    banner.className = 'cookie-banner';
+    banner.innerHTML = `
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3><i data-lucide="cookie"></i> Configurações de Cookies</h3>
+                <p>
+                    Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa 
+                    <a href="privacy.html">Política de Privacidade</a>.
+                </p>
+            </div>
+            <div class="cookie-actions">
+                <button id="rejectCookies" class="btn btn-outline">Recusar</button>
+                <button id="acceptCookies" class="btn btn-primary">Aceitar</button>
+            </div>
+        </div>
+    `;
+
+    // Append to body
+    document.body.appendChild(banner);
+
+    // Initialize icons
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+
+    // Show banner with animation
+    setTimeout(() => {
+        banner.classList.add('visible');
+    }, 1000);
+
+    // Handle interactions
+    document.getElementById('acceptCookies').addEventListener('click', () => {
+        localStorage.setItem('favero-cookie-consent', 'true');
+        banner.classList.remove('visible');
+        setTimeout(() => banner.remove(), 500);
+    });
+
+    document.getElementById('rejectCookies').addEventListener('click', () => {
+        localStorage.setItem('favero-cookie-consent', 'false');
+        banner.classList.remove('visible');
+        setTimeout(() => banner.remove(), 500);
     });
 }
