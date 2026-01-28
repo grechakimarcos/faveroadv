@@ -280,11 +280,7 @@ function initContactForm() {
                 .then(response => {
                     if (response.ok) {
                         // Success
-                        if (form.closest('.contact-form-wrapper')) {
-                            form.closest('.contact-form-wrapper').style.display = 'none';
-                        } else {
-                            form.style.display = 'none';
-                        }
+                        form.style.display = 'none';
                         successMessage.style.display = 'flex';
 
                         // Re-initialize icons
