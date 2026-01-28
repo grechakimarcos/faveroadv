@@ -236,10 +236,26 @@ function initContactForm() {
     const form = document.getElementById('contactForm');
     const successMessage = document.getElementById('contactSuccess');
 
-    /*
-    // Default form submission is now handled by FormSubmit.co
-    if (form && successMessage) {
-        // Validation only
+    // Check for success URL parameter (returned from FormSubmit)
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true' && successMessage && form) {
+        if (form.closest('.contact-form-wrapper')) {
+            form.closest('.contact-form-wrapper').style.display = 'none';
+        } else {
+            form.style.display = 'none';
+        }
+        successMessage.style.display = 'flex';
+
+        // Re-initialize icons
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+
+        // Clean URL
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+
+    if (form) {
         form.addEventListener('submit', function (e) {
             const consent = form.querySelector('#contactConsent')?.checked;
 
@@ -247,10 +263,8 @@ function initContactForm() {
                 e.preventDefault();
                 alert('Por favor, aceite os termos de uso de dados.');
             }
-            // If consent is checked, allow default submission to FormSubmit.co
         });
     }
-    */
 }
 
 // ===============================================
