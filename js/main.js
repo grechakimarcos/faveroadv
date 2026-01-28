@@ -236,31 +236,21 @@ function initContactForm() {
     const form = document.getElementById('contactForm');
     const successMessage = document.getElementById('contactSuccess');
 
+    /*
+    // Default form submission is now handled by FormSubmit.co
     if (form && successMessage) {
+        // Validation only
         form.addEventListener('submit', function (e) {
-            e.preventDefault();
-
             const consent = form.querySelector('#contactConsent')?.checked;
 
-            if (consent) {
-                // Simulate form submission
-                const submitBtn = form.querySelector('button[type="submit"]');
-                const originalText = submitBtn.textContent;
-                submitBtn.textContent = '...';
-                submitBtn.disabled = true;
-
-                setTimeout(function () {
-                    form.closest('.contact-form-wrapper').style.display = 'none';
-                    successMessage.style.display = 'flex';
-
-                    // Re-initialize Lucide icons for the success message
-                    if (typeof lucide !== 'undefined') {
-                        lucide.createIcons();
-                    }
-                }, 1500);
+            if (!consent) {
+                e.preventDefault();
+                alert('Por favor, aceite os termos de uso de dados.');
             }
+            // If consent is checked, allow default submission to FormSubmit.co
         });
     }
+    */
 }
 
 // ===============================================
