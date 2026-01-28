@@ -3135,6 +3135,7 @@ main {
     font-size: 1.125rem;
     color: var(--muted-foreground);
 }
+
 /* ===============================================
    LEGAL PAGE STYLES
    =============================================== */
@@ -3254,7 +3255,7 @@ main {
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    
+
     /* Glassmorphism support */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -3324,10 +3325,68 @@ main {
         width: 100%;
         flex-direction: column;
     }
-    
+
     .cookie-actions .btn {
         width: 100%;
         justify-content: center;
     }
 }
 
+
+/* ===============================================
+   CONTACT SUCCESS MESSAGE
+   =============================================== */
+.contact-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    min-height: 500px;
+    /* Preserve height to match form approx height */
+    animation: fadeIn 0.5s ease-out;
+    width: 100%;
+}
+
+.contact-success .success-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: rgba(37, 211, 102, 0.1);
+    color: #25d366;
+    margin-bottom: 1rem;
+}
+
+.contact-success .success-icon i {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.contact-success h2 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: var(--foreground);
+    line-height: 1.2;
+}
+
+.contact-success p {
+    font-size: 1.125rem;
+    color: var(--muted-foreground);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
