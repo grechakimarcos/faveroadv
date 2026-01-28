@@ -18,290 +18,7 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        /* Contact Page Specific Styles */
-        .contact-grid {
-            display: grid;
-            gap: 3rem;
-        }
 
-        @media (min-width: 1024px) {
-            .contact-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 4rem;
-            }
-        }
-
-        .contact-form-wrapper {
-            order: 2;
-        }
-
-        @media (min-width: 1024px) {
-            .contact-form-wrapper {
-                order: 1;
-            }
-        }
-
-        .contact-info {
-            order: 1;
-        }
-
-        @media (min-width: 1024px) {
-            .contact-info {
-                order: 2;
-            }
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .form-row {
-            display: grid;
-            gap: 1.5rem;
-        }
-
-        @media (min-width: 640px) {
-            .form-row {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .form-label {
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: var(--foreground);
-        }
-
-        .form-input,
-        .form-textarea {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            font-size: 1rem;
-            border: 1px solid var(--border);
-            background-color: var(--background);
-            color: var(--foreground);
-        }
-
-        .form-input {
-            height: 3rem;
-        }
-
-        .form-textarea {
-            min-height: 150px;
-            resize: none;
-        }
-
-        .form-input:focus,
-        .form-textarea:focus {
-            outline: none;
-            border-color: var(--ring);
-        }
-
-        .form-consent {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-        }
-
-        .form-consent input {
-            margin-top: 0.125rem;
-        }
-
-        .form-consent label {
-            font-size: 0.875rem;
-            line-height: 1.5;
-            color: var(--muted-foreground);
-            cursor: pointer;
-        }
-
-        /* Contact Info */
-        .contact-details {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-
-        .contact-item-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 2.5rem;
-            height: 2.5rem;
-            flex-shrink: 0;
-            background-color: var(--secondary);
-            color: var(--foreground);
-        }
-
-        .contact-item-icon i {
-            width: 1.25rem;
-            height: 1.25rem;
-        }
-
-        .contact-item-info p:first-child {
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: var(--foreground);
-        }
-
-        .contact-item-info p:last-child {
-            margin-top: 0.25rem;
-            color: var(--muted-foreground);
-        }
-
-        /* Social and Service Sections */
-        .contact-section {
-            padding-top: 2rem;
-            border-top: 1px solid var(--border);
-        }
-
-        .contact-section h2 {
-            margin-bottom: 1rem;
-            font-family: var(--font-serif);
-            font-size: 1.25rem;
-            font-weight: 500;
-            color: var(--foreground);
-        }
-
-        .social-grid {
-            display: flex;
-            gap: 0.75rem;
-        }
-
-        .social-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 3rem;
-            height: 3rem;
-            border: 1px solid var(--border);
-            border-radius: 50%;
-            background-color: var(--card);
-            color: var(--foreground);
-            transition: all var(--transition-base);
-        }
-
-        .social-link:hover {
-            border-color: var(--accent-foreground);
-            background-color: var(--accent);
-            color: var(--accent-foreground);
-        }
-
-        .social-link svg {
-            width: 1.25rem;
-            height: 1.25rem;
-        }
-
-        .service-types {
-            display: grid;
-            gap: 1rem;
-        }
-
-        @media (min-width: 640px) {
-            .service-types {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        .service-type {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 1rem;
-            background-color: var(--card);
-            border: 1px solid var(--border);
-        }
-
-        .service-type-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 2.5rem;
-            height: 2.5rem;
-            background-color: var(--primary);
-            color: var(--primary-foreground);
-        }
-
-        .service-type-icon i {
-            width: 1.25rem;
-            height: 1.25rem;
-        }
-
-        .service-type span {
-            font-weight: 500;
-            color: var(--card-foreground);
-        }
-
-        /* Map */
-        .contact-map {
-            overflow: hidden;
-            border: 1px solid var(--border);
-        }
-
-        .contact-map iframe {
-            width: 100%;
-            display: block;
-        }
-
-        /* Success Message */
-        .contact-success {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 4rem 2rem;
-        }
-
-        .contact-success .success-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 4rem;
-            height: 4rem;
-            margin-bottom: 1.5rem;
-            background-color: var(--accent);
-            color: var(--accent-foreground);
-        }
-
-        .contact-success .success-icon i {
-            width: 2rem;
-            height: 2rem;
-        }
-
-        .contact-success h2 {
-            font-family: var(--font-serif);
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: var(--foreground);
-        }
-
-        @media (min-width: 768px) {
-            .contact-success h2 {
-                font-size: 1.875rem;
-            }
-        }
-
-        .contact-success p {
-            margin-top: 1rem;
-            font-size: 1.125rem;
-            color: var(--muted-foreground);
-        }
-    </style>
 </head>
 
 <body>
@@ -438,7 +155,8 @@
                                 </div>
                                 <div class="contact-item-info">
                                     <p data-i18n="contact.address">EndereÃ§o</p>
-                                    <p data-i18n="contact.addressValue">R. FÃºlvio Aducci, 627 - Estreito, FlorianÃ³polis
+                                    <p data-i18n="contact.addressValue">R. FÃºlvio Aducci, 627 - Estreito,
+                                        FlorianÃ³polis
                                         - SC, 88075-000</p>
                                 </div>
                             </div>
@@ -561,7 +279,7 @@
                     <a href="index.html" class="footer-logo">
                         <img src="img/logo_rodape.png" alt="Favero Advocacia">
                     </a>
-                    <p class="footer-description" data-i18n="hero.subtitle">Assessoria jurÃ­dica especializada em Direito
+                    <p class="footer-description" data-i18n="hero.subtitle">Assessoria jurídica especializada em Direito
                         Civil, Trabalhista, Consumidor e Empresarial, com atendimento presencial e online.</p>
 
                     <!-- Social Links -->
@@ -599,11 +317,11 @@
 
                 <!-- Navigation -->
                 <div class="footer-nav">
-                    <h3 data-i18n="nav.home">InÃ­cio</h3>
+                    <h3 data-i18n="nav.home">Início</h3>
                     <ul>
-                        <li><a href="index.html" data-i18n="nav.home">InÃ­cio</a></li>
+                        <li><a href="index.html" data-i18n="nav.home">Início</a></li>
                         <li><a href="about.html" data-i18n="nav.about">Sobre</a></li>
-                        <li><a href="practice-areas.html" data-i18n="nav.practiceAreas">Ãreas de AtuaÃ§Ã£o</a></li>
+                        <li><a href="practice-areas.html" data-i18n="nav.practiceAreas">Áreas de Atuação</a></li>
                         <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
                         <li><a href="contact.html" data-i18n="nav.contact">Contato</a></li>
                     </ul>
@@ -611,7 +329,7 @@
 
                 <!-- Practice Areas -->
                 <div class="footer-nav">
-                    <h3 data-i18n="nav.practiceAreas">Ãreas de AtuaÃ§Ã£o</h3>
+                    <h3 data-i18n="nav.practiceAreas">Áreas de Atuação</h3>
                     <ul>
                         <li><a href="practice-areas.html#civil" data-i18n="practiceAreas.civil.title">Direito Civil</a>
                         </li>
@@ -629,8 +347,7 @@
                 <!-- Contact -->
                 <div class="footer-contact">
                     <h3 data-i18n="contact.title">Contato</h3>
-                    <address data-i18n="contact.addressValue">R. FÃºlvio Aducci, 627 - Estreito, FlorianÃ³polis - SC,
-                        88075-000</address>
+                    <address data-i18n="contact.addressValue">R. Fúlvio Aducci, 627, Sala 113, CEU Empresarial - Estreito, Florianópolis - SC, 88075-000</address>
 
                     <div class="footer-lang">
                         <h4>Language</h4>
@@ -648,7 +365,7 @@
                 <p>&copy; <span id="currentYear"></span> Favero Advocacia. <span data-i18n="footer.rights">Todos os
                         direitos reservados.</span></p>
                 <div class="footer-links">
-                    <a href="privacy.html" data-i18n="footer.privacy">PolÃ­tica de Privacidade</a>
+                    <a href="privacy.html" data-i18n="footer.privacy">Política de Privacidade</a>
                     <a href="terms.html" data-i18n="footer.terms">Termos de Uso</a>
                 </div>
             </div>
@@ -657,7 +374,7 @@
             <div class="developer-credit">
                 <a href="https://github.com/grechakimarcos" target="_blank" rel="noopener noreferrer"
                     class="credit-link">
-                    <span class="credit-text">Made with ðŸ–¤ by <strong>Marcos Roberto Grechaki</strong></span>
+                    <span class="credit-text">Made with 🖤 by <strong>Marcos Roberto Grechaki</strong></span>
                     <span class="credit-hover">Ver perfil <i data-lucide="arrow-right"></i></span>
                 </a>
             </div>
