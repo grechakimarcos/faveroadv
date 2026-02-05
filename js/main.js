@@ -232,11 +232,10 @@ function initNewsletterForm() {
 // CONTACT FORM
 // ===============================================
 
+
 function initContactForm() {
     const form = document.getElementById('contactForm');
     const successMessage = document.getElementById('contactSuccess');
-
-    // No explicit initialization needed for validation as we use global grecaptcha
 
     if (form && successMessage) {
         form.addEventListener('submit', function (e) {
@@ -247,17 +246,6 @@ function initContactForm() {
             if (!consent) {
                 alert('Por favor, aceite os termos de uso de dados.');
                 return;
-            }
-
-            // Validate Google reCAPTCHA
-            if (typeof grecaptcha !== 'undefined') {
-                const recaptchaResponse = grecaptcha.getResponse();
-                if (recaptchaResponse.length === 0) {
-                    alert('Por favor, complete a verificação "Não sou um robô".');
-                    return;
-                }
-            } else {
-                console.warn("reCAPTCHA not loaded");
             }
 
             // UI Loading State
@@ -298,9 +286,6 @@ function initContactForm() {
                     alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.');
                     submitBtn.textContent = originalText;
                     submitBtn.disabled = false;
-                    if (typeof grecaptcha !== 'undefined') {
-                        grecaptcha.reset(); // Reset captcha for retry
-                    }
                 });
         });
     }

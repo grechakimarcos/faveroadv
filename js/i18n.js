@@ -12,9 +12,9 @@ const dictionaries = {
             contact: 'Contato',
         },
         hero: {
-            title: 'Advocacia com excelência e compromisso',
-            subtitle: 'Assessoria jurídica especializada em Direito Civil, Trabalhista, Consumidor e Empresarial, com atendimento presencial e online.',
-            cta: 'Agendar Consulta',
+            title: 'Soluções Jurídicas Estratégicas com Resultados Comprovados',
+            subtitle: 'Mais de 6 anos de experiência | Atendimento presencial em Florianópolis e online em todo o Brasil | Atuação especializada em Direito Civil, Trabalhista, Consumidor e Empresarial',
+            cta: 'Fale com um Especialista',
             ctaSecondary: 'Conheça o Escritório',
         },
         practiceAreas: {
@@ -22,19 +22,19 @@ const dictionaries = {
             subtitle: 'Atuação especializada em diversas áreas do Direito, sempre com foco na excelência e nos resultados para nossos clientes.',
             civil: {
                 title: 'Direito Civil',
-                description: 'Contratos, responsabilidade civil, família e sucessões, direitos reais e obrigações.',
+                description: 'Elaboração e análise de contratos, resolução de questões de família e sucessões, defesa em ações de responsabilidade civil. Proteja seu patrimônio e seus direitos.',
             },
             labor: {
                 title: 'Direito Trabalhista',
-                description: 'Reclamações trabalhistas, acordos, rescisões e demais questões laborais.',
+                description: 'Defesa em reclamações trabalhistas, negociação de acordos, orientação em rescisões. Garanta seus direitos trabalhistas com assessoria especializada.',
             },
             consumer: {
                 title: 'Direito do Consumidor',
-                description: 'Defesa dos direitos do consumidor, ações de indenização e revisão contratual.',
+                description: 'Recupere valores pagos indevidamente, resolva problemas com produtos e serviços, reverta cobranças abusivas. Atuamos com foco em resultados rápidos.',
             },
             corporate: {
                 title: 'Direito Empresarial',
-                description: 'Constituição de empresas, contratos comerciais, recuperação judicial e falência.',
+                description: 'Constituição de empresas, contratos comerciais seguros, recuperação judicial estratégica. Proteja e impulsione seu negócio com assessoria jurídica especializada.',
             },
             procedure: {
                 title: 'Processo Civil',
@@ -44,8 +44,8 @@ const dictionaries = {
         about: {
             title: 'Sobre o Advogado',
             subtitle: 'Conheça a trajetória profissional de Eduardo Rios Favero',
-            bio: 'Eduardo Rios Favero é advogado pós-graduado em Direito Civil e Processo Civil, com sólida experiência em registros públicos, análise documental para registros e averbações, incorporações imobiliárias, elaboração de petições jurídicas, contratos e recursos, além de atuação contenciosa e extrajudicial em âmbito estadual e federal.',
-            experience: 'Atua em escritório próprio desde 2018 e também exerce a função de Juiz Leigo no Juizado Especial Cível do Fórum do Estreito – Comarca da Capital, conduzindo audiências, elaborando termos, decisões e sentenças sob supervisão judicial.',
+            bio: 'Eduardo Rios Favero é advogado pós-graduado em Direito Civil e Processo Civil, com atuação especializada em Direito Civil, Direito Trabalhista, Direito do Consumidor e Direito Empresarial. Possui sólida experiência na elaboração de contratos, análise documental, registros públicos, averbações, incorporações imobiliárias, bem como na redação de petições jurídicas e recursos. Atua de forma estratégica no contencioso e no âmbito extrajudicial, em processos judiciais e administrativos nas esferas estadual e federal, oferecendo soluções jurídicas seguras e eficazes para pessoas físicas e jurídicas.',
+            experience: 'Atua em escritório próprio desde 2018, prestando assessoria jurídica especializada a pessoas físicas e jurídicas, com foco na análise estratégica de demandas, prevenção de litígios e condução de processos judiciais e extrajudiciais. Paralelamente, exerce a função de Juiz Leigo no Juizado Especial Cível do Fórum do Estreito – Comarca da Capital, onde atua na condução de audiências de conciliação e instrução, elaboração de termos, minutas de decisões e sentenças, sempre sob a supervisão de magistrado togado, contribuindo para a celeridade processual e a efetividade da prestação jurisdicional.',
             education: 'Formação Acadêmica',
             educationDetails: 'Pós-graduação em Direito Civil e Processo Civil',
             judicial: 'Atuação Judicial',
@@ -120,9 +120,9 @@ const dictionaries = {
             contact: 'Contact',
         },
         hero: {
-            title: 'Legal excellence with commitment',
-            subtitle: 'Specialized legal advice in Civil, Labor, Consumer and Corporate Law, with in-person and online services.',
-            cta: 'Schedule a Consultation',
+            title: 'Strategic Legal Solutions with Proven Results',
+            subtitle: 'Over 6 years of experience | In-person service in Florianópolis and online throughout Brazil | Specialized practice in Civil, Labor, Consumer and Corporate Law',
+            cta: 'Talk to a Specialist',
             ctaSecondary: 'About the Firm',
         },
         practiceAreas: {
@@ -130,19 +130,19 @@ const dictionaries = {
             subtitle: 'Specialized practice in various areas of Law, always focused on excellence and results for our clients.',
             civil: {
                 title: 'Civil Law',
-                description: 'Contracts, civil liability, family and inheritance, property rights and obligations.',
+                description: 'Contract drafting and analysis, family and inheritance matters resolution, civil liability defense. Protect your assets and your rights.',
             },
             labor: {
                 title: 'Labor Law',
-                description: 'Labor claims, agreements, terminations and other labor-related matters.',
+                description: 'Defense in labor claims, agreement negotiation, termination guidance. Secure your labor rights with specialized advice.',
             },
             consumer: {
                 title: 'Consumer Law',
-                description: 'Consumer rights defense, compensation claims and contract review.',
+                description: 'Recover unduly paid amounts, resolve product and service issues, reverse abusive charges. We work with focus on fast results.',
             },
             corporate: {
                 title: 'Corporate Law',
-                description: 'Company formation, commercial contracts, judicial recovery and bankruptcy.',
+                description: 'Company formation, secure commercial contracts, strategic judicial recovery. Protect and boost your business with specialized legal advice.',
             },
             procedure: {
                 title: 'Civil Procedure',
@@ -152,8 +152,8 @@ const dictionaries = {
         about: {
             title: 'About the Lawyer',
             subtitle: 'Learn about the professional background of Eduardo Rios Favero',
-            bio: 'Eduardo Rios Favero is a lawyer with a postgraduate degree in Civil Law and Civil Procedure, with solid experience in public records, document analysis for registrations and annotations, real estate incorporations, drafting legal petitions, contracts, and appeals, as well as litigation and extrajudicial matters in both state and federal courts.',
-            experience: 'He has been practicing law in his own firm since 2018 and also acts as a Lay Judge at the Small Claims Civil Court of the Estreito Forum – Capital District, conducting hearings, drafting rulings, decisions, and judgments under judicial supervision.',
+            bio: 'Eduardo Rios Favero is a lawyer with a postgraduate degree in Civil Law and Civil Procedure, specializing in Civil Law, Labor Law, Consumer Law, and Business Law. He has solid experience in contract drafting, document analysis, public records, annotations, real estate developments, as well as drafting legal petitions and appeals. He acts strategically in litigation and extrajudicial matters, in judicial and administrative proceedings at the state and federal levels, offering safe and effective legal solutions for individuals and companies.',
+            experience: 'He has been practicing law in his own firm since 2018, providing specialized legal advice to individuals and companies, focusing on the strategic analysis of demands, litigation prevention, and conducting judicial and extrajudicial proceedings. At the same time, he acts as a Lay Judge at the Small Claims Civil Court of the Estreito Forum – Capital District, where he conducts conciliation and instruction hearings, drafts terms, draft decisions and judgments, always under the supervision of a magistrate, contributing to procedural efficiency and the effectiveness of jurisdictional services.',
             education: 'Academic Background',
             educationDetails: 'Postgraduate degree in Civil Law and Civil Procedure',
             judicial: 'Judicial Activity',
@@ -228,9 +228,9 @@ const dictionaries = {
             contact: 'Contacto',
         },
         hero: {
-            title: 'Abogacía con excelencia y compromiso',
-            subtitle: 'Asesoría jurídica especializada en Derecho Civil, Laboral, del Consumidor y Empresarial, con atención presencial y online.',
-            cta: 'Agendar Consulta',
+            title: 'Soluciones Jurídicas Estratégicas con Resultados Comprobados',
+            subtitle: 'Más de 6 años de experiencia | Atención presencial en Florianópolis y online en todo Brasil | Actuación especializada en Derecho Civil, Laboral, del Consumidor y Empresarial',
+            cta: 'Hable con un Especialista',
             ctaSecondary: 'Conozca el Despacho',
         },
         practiceAreas: {
@@ -238,19 +238,19 @@ const dictionaries = {
             subtitle: 'Actuación especializada en diversas áreas del Derecho, siempre con enfoque en la excelencia y los resultados para nuestros clientes.',
             civil: {
                 title: 'Derecho Civil',
-                description: 'Contratos, responsabilidad civil, familia y sucesiones, derechos reales y obligaciones.',
+                description: 'Elaboración y análisis de contratos, resolución de cuestiones de familia y sucesiones, defensa en acciones de responsabilidad civil. Proteja su patrimonio y sus derechos.',
             },
             labor: {
                 title: 'Derecho Laboral',
-                description: 'Reclamaciones laborales, acuerdos, rescisiones y demás cuestiones laborales.',
+                description: 'Defensa en reclamaciones laborales, negociación de acuerdos, orientación en rescisiones. Garantice sus derechos laborales con asesoría especializada.',
             },
             consumer: {
                 title: 'Derecho del Consumidor',
-                description: 'Defensa de los derechos del consumidor, acciones de indemnización y revisión contractual.',
+                description: 'Recupere valores pagados indebidamente, resuelva problemas con productos y servicios, revierta cobros abusivos. Actuamos con enfoque en resultados rápidos.',
             },
             corporate: {
                 title: 'Derecho Empresarial',
-                description: 'Constitución de empresas, contratos comerciales, recuperación judicial y quiebra.',
+                description: 'Constitución de empresas, contratos comerciales seguros, recuperación judicial estratégica. Proteja e impulse su negocio con asesoría jurídica especializada.',
             },
             procedure: {
                 title: 'Proceso Civil',
@@ -260,8 +260,8 @@ const dictionaries = {
         about: {
             title: 'Sobre el Abogado',
             subtitle: 'Conozca la trayectoria profesional de Eduardo Rios Favero',
-            bio: 'Eduardo Rios Favero es abogado con posgrado en Derecho Civil y Proceso Civil, con sólida experiencia en registros públicos, análisis documental para registros y anotaciones, incorporaciones inmobiliarias, elaboración de peticiones jurídicas, contratos y recursos, además de actuación contenciosa y extrajudicial en ámbito estatal y federal.',
-            experience: 'Actúa en despacho propio desde 2018 y también ejerce la función de Juez Lego en el Juzgado Especial Civil del Foro de Estreito – Comarca de la Capital, conduciendo audiencias, elaborando términos, decisiones y sentencias bajo supervisión judicial.',
+            bio: 'Eduardo Rios Favero es abogado con posgrado en Derecho Civil y Proceso Civil, con actuación especializada en Derecho Civil, Derecho Laboral, Derecho del Consumidor y Derecho Empresarial. Posee sólida experiencia en la elaboración de contratos, análisis documental, registros públicos, anotaciones, incorporaciones inmobiliarias, así como en la redacción de peticiones jurídicas y recursos. Actúa de forma estratégica en lo contencioso y en el ámbito extrajudicial, en procesos judiciales y administrativos en las esferas estatal y federal, ofreciendo soluciones jurídicas seguras y eficaces para personas físicas y jurídicas.',
+            experience: 'Actúa en despacho propio desde 2018, prestando asesoría jurídica especializada a personas físicas y jurídicas, con enfoque en el análisis estratégico de demandas, prevención de litigios y conducción de procesos judiciales y extrajudiciales. Paralelamente, ejerce la función de Juez Lego en el Juzgado Especial Civil del Foro de Estreito – Comarca de la Capital, donde actúa en la conducción de audiencias de conciliación e instrucción, elaboración de términos, minutas de decisiones y sentencias, siempre bajo la supervisión de magistrado togado, contribuyendo para la celeridad procesal y la efectividad de la prestación jurisdiccional.',
             education: 'Formación Académica',
             educationDetails: 'Posgrado en Derecho Civil y Proceso Civil',
             judicial: 'Actuación Judicial',
