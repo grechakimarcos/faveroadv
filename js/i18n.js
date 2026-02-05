@@ -12,29 +12,29 @@ const dictionaries = {
             contact: 'Contato',
         },
         hero: {
-            title: 'Soluções Jurídicas Estratégicas com Resultados Comprovados',
-            subtitle: 'Mais de 6 anos de experiência | Atendimento presencial em Florianópolis e online em todo o Brasil | Atuação especializada em Direito Civil, Trabalhista, Consumidor e Empresarial',
-            cta: 'Fale com um Especialista',
-            ctaSecondary: 'Conheça o Escritório',
+            title: 'Advocacia de Resultados com Visão Estratégica de Juiz',
+            subtitle: 'Eduardo Rios Favero – Juiz Leigo e Advogado Especialista | Mais de 6 anos resolvendo casos complexos em Direito Civil, Trabalhista, Consumidor e Empresarial | Atendimento presencial em Florianópolis e online em todo Brasil',
+            cta: 'Fale com um Advogado Agora',
+            ctaSecondary: 'Conheça Nossa Experiência',
         },
         practiceAreas: {
             title: 'Áreas de Atuação',
             subtitle: 'Atuação especializada em diversas áreas do Direito, sempre com foco na excelência e nos resultados para nossos clientes.',
             civil: {
                 title: 'Direito Civil',
-                description: 'Elaboração e análise de contratos, resolução de questões de família e sucessões, defesa em ações de responsabilidade civil. Proteja seu patrimônio e seus direitos.',
+                description: 'Proteja seu patrimônio e sua família com assessoria jurídica estratégica. Elaboramos contratos seguros, resolvemos questões de herança e sucessão, e defendemos seus direitos em casos de responsabilidade civil. Evite prejuízos e tenha a tranquilidade de estar juridicamente protegido.',
             },
             labor: {
                 title: 'Direito Trabalhista',
-                description: 'Defesa em reclamações trabalhistas, negociação de acordos, orientação em rescisões. Garanta seus direitos trabalhistas com assessoria especializada.',
+                description: 'Foi demitido injustamente? Não recebeu suas verbas rescisórias? Defendemos seus direitos trabalhistas com estratégia e resultados. Atuamos em reclamações trabalhistas, negociação de acordos vantajosos e orientação completa em rescisões. Recupere o que é seu por direito.',
             },
             consumer: {
                 title: 'Direito do Consumidor',
-                description: 'Recupere valores pagos indevidamente, resolva problemas com produtos e serviços, reverta cobranças abusivas. Atuamos com foco em resultados rápidos.',
+                description: 'Cobranças indevidas no cartão? Produto com defeito e a loja se recusa a resolver? Defendemos consumidores contra práticas abusivas, recuperamos valores pagos indevidamente e resolvemos problemas com agilidade. Você tem direitos – nós garantimos que sejam respeitados.',
             },
             corporate: {
                 title: 'Direito Empresarial',
-                description: 'Constituição de empresas, contratos comerciais seguros, recuperação judicial estratégica. Proteja e impulsione seu negócio com assessoria jurídica especializada.',
+                description: 'Seu negócio merece proteção jurídica estratégica. Auxiliamos na constituição de empresas, elaboramos contratos comerciais blindados e conduzimos recuperações judiciais com visão de negócio. Evite litígios, proteja seu patrimônio empresarial e tome decisões seguras.',
             },
             procedure: {
                 title: 'Processo Civil',
@@ -44,8 +44,8 @@ const dictionaries = {
         about: {
             title: 'Sobre o Advogado',
             subtitle: 'Conheça a trajetória profissional de Eduardo Rios Favero',
-            bio: 'Eduardo Rios Favero é advogado pós-graduado em Direito Civil e Processo Civil, com atuação especializada em Direito Civil, Direito Trabalhista, Direito do Consumidor e Direito Empresarial. Possui sólida experiência na elaboração de contratos, análise documental, registros públicos, averbações, incorporações imobiliárias, bem como na redação de petições jurídicas e recursos. Atua de forma estratégica no contencioso e no âmbito extrajudicial, em processos judiciais e administrativos nas esferas estadual e federal, oferecendo soluções jurídicas seguras e eficazes para pessoas físicas e jurídicas.',
-            experience: 'Atua em escritório próprio desde 2018, prestando assessoria jurídica especializada a pessoas físicas e jurídicas, com foco na análise estratégica de demandas, prevenção de litígios e condução de processos judiciais e extrajudiciais. Paralelamente, exerce a função de Juiz Leigo no Juizado Especial Cível do Fórum do Estreito – Comarca da Capital, onde atua na condução de audiências de conciliação e instrução, elaboração de termos, minutas de decisões e sentenças, sempre sob a supervisão de magistrado togado, contribuindo para a celeridade processual e a efetividade da prestação jurisdicional.',
+            bio: 'Eduardo Rios Favero une a experiência de quem já viu a lei pelos dois lados: como advogado e como Juiz Leigo. Pós-graduado em Direito Civil e Processo Civil, Eduardo não apenas conhece a teoria jurídica – ele aplica a lei com a perspectiva de quem conduz audiências e elabora sentenças no Juizado Especial Cível. Esta dupla experiência garante assessoria jurídica mais estratégica, orientada por resultados e com profundo conhecimento do funcionamento interno do Judiciário.',
+            experience: 'Desde 2018, atua em escritório próprio defendendo pessoas e empresas com estratégia e visão diferenciada. Paralelamente, exerce a função de Juiz Leigo no Juizado Especial Cível do Fórum do Estreito – Comarca da Capital, onde conduz audiências de conciliação e instrução, elabora termos, decisões e sentenças sob supervisão judicial. Esta atuação dual proporciona uma compreensão única dos processos, permitindo antecipar cenários e oferecer soluções mais efetivas aos clientes.',
             education: 'Formação Acadêmica',
             educationDetails: 'Pós-graduação em Direito Civil e Processo Civil',
             judicial: 'Atuação Judicial',
@@ -69,7 +69,7 @@ const dictionaries = {
                 phone: 'Telefone',
                 subject: 'Assunto',
                 message: 'Mensagem',
-                consent: 'Autorizo o uso dos meus dados para contato, conforme a LGPD.',
+                consent: 'Autorizo o uso dos meus dados para contato conforme a Política de Privacidade. Seus dados são protegidos e usados apenas para responder sua solicitação.',
                 submit: 'Enviar Mensagem',
             },
             success: 'Mensagem enviada com sucesso!',
@@ -120,29 +120,29 @@ const dictionaries = {
             contact: 'Contact',
         },
         hero: {
-            title: 'Strategic Legal Solutions with Proven Results',
-            subtitle: 'Over 6 years of experience | In-person service in Florianópolis and online throughout Brazil | Specialized practice in Civil, Labor, Consumer and Corporate Law',
-            cta: 'Talk to a Specialist',
-            ctaSecondary: 'About the Firm',
+            title: 'Results-Driven Law Practice with a Judge’s Strategic Insight',
+            subtitle: 'Eduardo Rios Favero – Lay Judge and Specialist Attorney | Over 6 years solving complex cases in Civil, Labor, Consumer, and Corporate Law | In-person service in Florianópolis and online throughout Brazil',
+            cta: 'Talk to an Attorney Now',
+            ctaSecondary: 'Learn About Our Experience',
         },
         practiceAreas: {
             title: 'Practice Areas',
             subtitle: 'Specialized practice in various areas of Law, always focused on excellence and results for our clients.',
             civil: {
                 title: 'Civil Law',
-                description: 'Contract drafting and analysis, family and inheritance matters resolution, civil liability defense. Protect your assets and your rights.',
+                description: 'Protect your assets and family with strategic legal counsel. We draft secure contracts, resolve inheritance and succession matters, and defend your rights in civil liability cases. Avoid losses and have the peace of mind of being legally protected.',
             },
             labor: {
                 title: 'Labor Law',
-                description: 'Defense in labor claims, agreement negotiation, termination guidance. Secure your labor rights with specialized advice.',
+                description: 'Were you unfairly dismissed? Didn’t receive your severance pay? We defend your labor rights with strategy and results. We handle labor claims, negotiate advantageous settlements, and provide complete termination guidance. Recover what is rightfully yours.',
             },
             consumer: {
                 title: 'Consumer Law',
-                description: 'Recover unduly paid amounts, resolve product and service issues, reverse abusive charges. We work with focus on fast results.',
+                description: 'Improper credit card charges? Defective product and the store refuses to solve it? We defend consumers against abusive practices, recover wrongly paid amounts, and resolve issues swiftly. You have rights – we ensure they are respected.',
             },
             corporate: {
                 title: 'Corporate Law',
-                description: 'Company formation, secure commercial contracts, strategic judicial recovery. Protect and boost your business with specialized legal advice.',
+                description: 'Your business deserves strategic legal protection. We assist in company formation, draft ironclad commercial contracts, and conduct judicial recoveries with business vision. Avoid litigation, protect your corporate assets, and make secure decisions.',
             },
             procedure: {
                 title: 'Civil Procedure',
@@ -152,8 +152,8 @@ const dictionaries = {
         about: {
             title: 'About the Lawyer',
             subtitle: 'Learn about the professional background of Eduardo Rios Favero',
-            bio: 'Eduardo Rios Favero is a lawyer with a postgraduate degree in Civil Law and Civil Procedure, specializing in Civil Law, Labor Law, Consumer Law, and Business Law. He has solid experience in contract drafting, document analysis, public records, annotations, real estate developments, as well as drafting legal petitions and appeals. He acts strategically in litigation and extrajudicial matters, in judicial and administrative proceedings at the state and federal levels, offering safe and effective legal solutions for individuals and companies.',
-            experience: 'He has been practicing law in his own firm since 2018, providing specialized legal advice to individuals and companies, focusing on the strategic analysis of demands, litigation prevention, and conducting judicial and extrajudicial proceedings. At the same time, he acts as a Lay Judge at the Small Claims Civil Court of the Estreito Forum – Capital District, where he conducts conciliation and instruction hearings, drafts terms, draft decisions and judgments, always under the supervision of a magistrate, contributing to procedural efficiency and the effectiveness of jurisdictional services.',
+            bio: 'Eduardo Rios Favero brings the experience of someone who has seen the law from both sides: as an attorney and as a Lay Judge. With a postgraduate degree in Civil Law and Civil Procedure, Eduardo doesn’t just know legal theory – he applies the law with the perspective of someone who conducts hearings and drafts judgments at the Small Claims Civil Court. This dual experience ensures more strategic legal counsel, results-oriented, and with deep knowledge of the inner workings of the Judiciary.',
+            experience: 'Since 2018, he has practiced in his own firm defending individuals and companies with strategy and differentiated vision. Simultaneously, he serves as a Lay Judge at the Small Claims Civil Court of the Estreito Forum – Capital District, where he conducts conciliation and instruction hearings, drafts terms, decisions and judgments under judicial supervision. This dual role provides a unique understanding of legal processes, allowing him to anticipate scenarios and offer more effective solutions to clients.',
             education: 'Academic Background',
             educationDetails: 'Postgraduate degree in Civil Law and Civil Procedure',
             judicial: 'Judicial Activity',
@@ -177,7 +177,7 @@ const dictionaries = {
                 phone: 'Phone',
                 subject: 'Subject',
                 message: 'Message',
-                consent: 'I authorize the use of my data for contact purposes, in accordance with LGPD/GDPR.',
+                consent: 'I authorize the use of my data for contact purposes in accordance with the Privacy Policy. Your data is protected and used only to respond to your request.',
                 submit: 'Send Message',
             },
             success: 'Message sent successfully!',
@@ -228,29 +228,29 @@ const dictionaries = {
             contact: 'Contacto',
         },
         hero: {
-            title: 'Soluciones Jurídicas Estratégicas con Resultados Comprobados',
-            subtitle: 'Más de 6 años de experiencia | Atención presencial en Florianópolis y online en todo Brasil | Actuación especializada en Derecho Civil, Laboral, del Consumidor y Empresarial',
-            cta: 'Hable con un Especialista',
-            ctaSecondary: 'Conozca el Despacho',
+            title: 'Advocacía de Resultados con Visión Estratégica de Juez',
+            subtitle: 'Eduardo Rios Favero – Juez Lego y Abogado Especialista | Más de 6 años resolviendo casos complejos en Derecho Civil, Laboral, del Consumidor y Empresarial | Atención presencial en Florianópolis y online en todo Brasil',
+            cta: 'Hable con un Abogado Ahora',
+            ctaSecondary: 'Conozca Nuestra Experiencia',
         },
         practiceAreas: {
             title: 'Áreas de Práctica',
             subtitle: 'Actuación especializada en diversas áreas del Derecho, siempre con enfoque en la excelencia y los resultados para nuestros clientes.',
             civil: {
                 title: 'Derecho Civil',
-                description: 'Elaboración y análisis de contratos, resolución de cuestiones de familia y sucesiones, defensa en acciones de responsabilidad civil. Proteja su patrimonio y sus derechos.',
+                description: 'Proteja su patrimonio y su familia con asesoría jurídica estratégica. Elaboramos contratos seguros, resolvemos cuestiones de herencia y sucesión, y defendemos sus derechos en casos de responsabilidad civil. Evite perjuicios y tenga la tranquilidad de estar jurídicamente protegido.',
             },
             labor: {
                 title: 'Derecho Laboral',
-                description: 'Defensa en reclamaciones laborales, negociación de acuerdos, orientación en rescisiones. Garantice sus derechos laborales con asesoría especializada.',
+                description: '¿Fue despedido injustamente? ¿No recibió sus indemnizaciones laborales? Defendemos sus derechos laborales con estrategia y resultados. Actuamos en reclamaciones laborales, negociación de acuerdos ventajosos y orientación completa en rescisiones. Recupere lo que es suyo por derecho.',
             },
             consumer: {
                 title: 'Derecho del Consumidor',
-                description: 'Recupere valores pagados indebidamente, resuelva problemas con productos y servicios, revierta cobros abusivos. Actuamos con enfoque en resultados rápidos.',
+                description: '¿Cobros indebidos en la tarjeta? ¿Producto defectuoso y la tienda se niega a resolver? Defendemos consumidores contra prácticas abusivas, recuperamos valores pagados indebidamente y resolvemos problemas con agilidad. Usted tiene derechos – nosotros garantizamos que sean respetados.',
             },
             corporate: {
                 title: 'Derecho Empresarial',
-                description: 'Constitución de empresas, contratos comerciales seguros, recuperación judicial estratégica. Proteja e impulse su negocio con asesoría jurídica especializada.',
+                description: 'Su negocio merece protección jurídica estratégica. Auxiliamos en la constitución de empresas, elaboramos contratos comerciales blindados y conducimos recuperaciones judiciales con visión de negocio. Evite litigios, proteja su patrimonio empresarial y tome decisiones seguras.',
             },
             procedure: {
                 title: 'Proceso Civil',
@@ -260,8 +260,8 @@ const dictionaries = {
         about: {
             title: 'Sobre el Abogado',
             subtitle: 'Conozca la trayectoria profesional de Eduardo Rios Favero',
-            bio: 'Eduardo Rios Favero es abogado con posgrado en Derecho Civil y Proceso Civil, con actuación especializada en Derecho Civil, Derecho Laboral, Derecho del Consumidor y Derecho Empresarial. Posee sólida experiencia en la elaboración de contratos, análisis documental, registros públicos, anotaciones, incorporaciones inmobiliarias, así como en la redacción de peticiones jurídicas y recursos. Actúa de forma estratégica en lo contencioso y en el ámbito extrajudicial, en procesos judiciales y administrativos en las esferas estatal y federal, ofreciendo soluciones jurídicas seguras y eficaces para personas físicas y jurídicas.',
-            experience: 'Actúa en despacho propio desde 2018, prestando asesoría jurídica especializada a personas físicas y jurídicas, con enfoque en el análisis estratégico de demandas, prevención de litigios y conducción de procesos judiciales y extrajudiciales. Paralelamente, ejerce la función de Juez Lego en el Juzgado Especial Civil del Foro de Estreito – Comarca de la Capital, donde actúa en la conducción de audiencias de conciliación e instrucción, elaboración de términos, minutas de decisiones y sentencias, siempre bajo la supervisión de magistrado togado, contribuyendo para la celeridad procesal y la efectividad de la prestación jurisdiccional.',
+            bio: 'Eduardo Rios Favero une la experiencia de quien ya vio la ley por ambos lados: como abogado y como Juez Lego. Posgraduado en Derecho Civil y Proceso Civil, Eduardo no solo conoce la teoría jurídica – él aplica la ley con la perspectiva de quien conduce audiencias y elabora sentencias en el Juzgado Especial Civil. Esta doble experiencia garantiza asesoría jurídica más estratégica, orientada por resultados y con profundo conocimiento del funcionamiento interno del Poder Judicial.',
+            experience: 'Desde 2018, actúa en despacho propio defendiendo personas y empresas con estrategia y visión diferenciada. Paralelamente, ejerce la función de Juez Lego en el Juzgado Especial Civil del Foro de Estreito – Comarca de la Capital, donde conduce audiencias de conciliación e instrucción, elabora términos, decisiones y sentencias bajo supervisión judicial. Esta actuación dual proporciona una comprensión única de los procesos, permitiendo anticipar escenarios y ofrecer soluciones más efectivas a los clientes.',
             education: 'Formación Académica',
             educationDetails: 'Posgrado en Derecho Civil y Proceso Civil',
             judicial: 'Actuación Judicial',
@@ -285,7 +285,7 @@ const dictionaries = {
                 phone: 'Teléfono',
                 subject: 'Asunto',
                 message: 'Mensaje',
-                consent: 'Autorizo el uso de mis datos para contacto, conforme a la LGPD/GDPR.',
+                consent: 'Autorizo el uso de mis datos para contacto conforme a la Política de Privacidad. Sus datos son protegidos y usados solo para responder su solicitud.',
                 submit: 'Enviar Mensaje',
             },
             success: '¡Mensaje enviado con éxito!',
@@ -335,14 +335,14 @@ const blogPosts = [
         id: 1,
         slug: 'direitos-consumidor-compras-online',
         title: {
-            pt: 'Direitos do Consumidor em Compras Online',
-            en: 'Consumer Rights in Online Shopping',
-            es: 'Derechos del Consumidor en Compras Online',
+            pt: 'Comprou Online e Se Arrependeu? Você Tem 7 Dias para Desistir - Saiba Como',
+            en: 'Bought Online and Changed Your Mind? You Have 7 Days to Cancel - Learn How',
+            es: 'Compró Online y Se Arrepintió? Tiene 7 Días para Desistir - Sepa Cómo',
         },
         excerpt: {
-            pt: 'Conheça seus direitos ao realizar compras pela internet e como proceder em caso de problemas.',
-            en: 'Learn about your rights when shopping online and how to proceed in case of issues.',
-            es: 'Conozca sus derechos al realizar compras por internet y cómo proceder en caso de problemas.',
+            pt: 'Descubra seus direitos ao comprar pela internet: prazo de arrependimento, garantia legal e o que fazer quando a loja se recusa a devolver seu dinheiro.',
+            en: 'Discover your rights when shopping online: withdrawal period, legal warranty, and what to do when the store refuses to refund your money.',
+            es: 'Descubra sus derechos al comprar por internet: plazo de arrepentimiento, garantía legal y qué hacer cuando la tienda se niega a devolver su dinero.',
         },
         content: {
             pt: `<p>Com o crescimento do comércio eletrônico, é fundamental que os consumidores conheçam seus direitos ao realizar compras online. O Código de Defesa do Consumidor (CDC) estabelece garantias específicas para esse tipo de transação.</p>
@@ -378,14 +378,14 @@ const blogPosts = [
         id: 2,
         slug: 'rescisao-contrato-trabalho',
         title: {
-            pt: 'Rescisão de Contrato de Trabalho: O que você precisa saber',
-            en: 'Employment Contract Termination: What you need to know',
-            es: 'Rescisión de Contrato de Trabajo: Lo que necesita saber',
+            pt: 'Foi Demitido? Guia Completo dos Seus Direitos na Rescisão Trabalhista',
+            en: 'Were You Fired? Complete Guide to Your Rights in Employment Termination',
+            es: 'Fue Despedido? Guía Completa de Sus Derechos en la Rescisión Laboral',
         },
         excerpt: {
-            pt: 'Entenda os tipos de rescisão contratual e os direitos do trabalhador em cada situação.',
-            en: 'Understand the types of contract termination and worker rights in each situation.',
-            es: 'Entienda los tipos de rescisión contractual y los derechos del trabajador en cada situación.',
+            pt: 'Demissão sem justa causa, pedido de demissão ou justa causa: entenda a diferença e quanto você tem direito a receber em cada tipo de rescisão.',
+            en: 'Termination without cause, resignation, or termination for cause: understand the difference and what you are entitled to receive in each type of termination.',
+            es: 'Despido sin justa causa, renuncia o justa causa: entienda la diferencia y cuánto tiene derecho a recibir en cada tipo de rescisión.',
         },
         content: {
             pt: `<p>A rescisão do contrato de trabalho é o momento de encerramento do vínculo empregatício. Existem diferentes modalidades, cada uma com seus direitos e deveres específicos.</p>
@@ -421,14 +421,14 @@ const blogPosts = [
         id: 3,
         slug: 'contratos-compra-venda-imoveis',
         title: {
-            pt: 'Contratos de Compra e Venda de Imóveis',
-            en: 'Real Estate Purchase and Sale Contracts',
-            es: 'Contratos de Compra y Venta de Inmuebles',
+            pt: 'Compra e Venda de Imóveis: Guia Completo para Evitar Problemas',
+            en: 'Real Estate Purchase and Sale: Complete Guide to Avoid Problems',
+            es: 'Compra y Venta de Inmuebles: Guía Completa para Evitar Problemas',
         },
         excerpt: {
-            pt: 'Aspectos essenciais a serem observados na elaboração e análise de contratos imobiliários.',
-            en: 'Essential aspects to observe when drafting and analyzing real estate contracts.',
-            es: 'Aspectos esenciales a observar en la elaboración y análisis de contratos inmobiliarios.',
+            pt: 'Cláusulas essenciais do contrato, verificação de documentos e o que fazer antes de assinar. Proteja-se de prejuízos na compra do seu imóvel.',
+            en: 'Essential contract clauses, document verification, and what to do before signing. Protect yourself from losses when buying your property.',
+            es: 'Cláusulas esenciales del contrato, verificación de documentos y qué hacer antes de firmar. Protéjase de perjuicios en la compra de su inmueble.',
         },
         content: {
             pt: `<p>A compra e venda de um imóvel é um negócio jurídico complexo que exige atenção aos detalhes contratuais para evitar prejuízos futuros.</p>
@@ -464,14 +464,14 @@ const blogPosts = [
         id: 4,
         slug: 'abertura-empresa-mei',
         title: {
-            pt: 'Abertura de Empresa e MEI: Guia Completo',
-            en: 'Company Formation and MEI: Complete Guide',
-            es: 'Apertura de Empresa y MEI: Guía Completa',
+            pt: 'MEI 2026: Passo a Passo para Formalizar Seu Negócio',
+            en: 'MEI 2026: Step by Step to Formalize Your Business',
+            es: 'MEI 2026: Paso a Paso para Formalizar Su Negocio',
         },
         excerpt: {
-            pt: 'Passo a passo para abrir sua empresa ou se formalizar como Microempreendedor Individual.',
-            en: 'Step by step to open your company or formalize as an Individual Microentrepreneur.',
-            es: 'Paso a paso para abrir su empresa o formalizarse como Microemprendedor Individual.',
+            pt: 'Descubra se você pode ser MEI, quais as vantagens, como se formalizar e quando é hora de migrar para ME ou EPP.',
+            en: 'Find out if you can be an MEI, what the advantages are, how to formalize, and when it\'s time to migrate to ME or EPP.',
+            es: 'Descubra si puede ser MEI, cuáles son las ventajas, cómo formalizarse y cuándo es hora de migrar a ME o EPP.',
         },
         content: {
             pt: `<p>Formalizar um negócio é o primeiro passo para o sucesso empresarial. No Brasil, o MEI (Microempreendedor Individual) é a modalidade mais simples para quem está começando.</p>
@@ -507,14 +507,14 @@ const blogPosts = [
         id: 5,
         slug: 'prazos-processuais-civil',
         title: {
-            pt: 'Prazos Processuais no Processo Civil',
-            en: 'Procedural Deadlines in Civil Process',
-            es: 'Plazos Procesales en el Proceso Civil',
+            pt: 'Perdeu o Prazo? Entenda Como Funcionam os Prazos no Processo Civil',
+            en: 'Missed the Deadline? Understand How Deadlines Work in Civil Process',
+            es: 'Perdió el Plazo? Entienda Cómo Funcionan los Plazos en el Proceso Civil',
         },
         excerpt: {
-            pt: 'Entenda como funcionam os prazos no processo civil brasileiro e a importância de respeitá-los.',
-            en: 'Understand how deadlines work in the Brazilian civil process and the importance of respecting them.',
-            es: 'Entienda cómo funcionan los plazos en el proceso civil brasileño y la importancia de respetarlos.',
+            pt: 'Contagem em dias úteis, prazos para contestação e recursos, e por que perder um prazo pode ser fatal para seu processo.',
+            en: 'Counting in business days, deadlines for defense and appeals, and why missing a deadline can be fatal to your case.',
+            es: 'Conteo en días hábiles, plazos para contestación y recursos, y por qué perder un plazo puede ser fatal para su proceso.',
         },
         content: {
             pt: `<p>Os prazos processuais são lapsos de tempo estabelecidos por lei para a prática de atos processuais. O desrespeito a eles pode levar à perda de direitos (preclusão).</p>
