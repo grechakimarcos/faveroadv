@@ -13,7 +13,7 @@ const dictionaries = {
         },
         hero: {
             title: 'Advocacia de Resultados com Visão Estratégica de Juiz',
-            subtitle: 'Eduardo Rios Favero – Juiz Leigo e Advogado Especialista | Mais de 6 anos resolvendo casos complexos em Direito Civil, Trabalhista, Consumidor e Empresarial | Atendimento presencial em Florianópolis e online em todo Brasil',
+            subtitle: 'Eduardo Rios Favero – Juiz Leigo e Advogado Especialista | Mais de 10 anos resolvendo casos complexos em Direito Civil, Trabalhista, Consumidor e Empresarial | Atendimento presencial em Florianópolis e online em todo Brasil',
             cta: 'Fale com um Advogado Agora',
             ctaSecondary: 'Conheça Nossa Experiência',
         },
