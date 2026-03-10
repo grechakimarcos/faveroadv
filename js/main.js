@@ -45,7 +45,105 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Cookie Consent
     initCookieConsent();
+
+    // Hero Carousel
+    initHeroCarousel();
+
+    // About Page Carousel
+    initAboutCarousel();
 });
+
+// ===============================================
+// HERO CAROUSEL
+// ===============================================
+
+function initHeroCarousel() {
+    const slides = document.querySelectorAll('.hero-slide');
+    if (slides.length <= 1) return;
+
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+    const intervalTime = 6000; // 6 seconds per slide
+
+    setInterval(function () {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slides[currentSlide].classList.add('active');
+    }, intervalTime);
+}
+
+// ===============================================
+// ABOUT PAGE CAROUSEL
+// ===============================================
+
+function initAboutCarousel() {
+    const carousel = document.getElementById('aboutCarousel');
+    if (!carousel) return;
+
+    const slides = carousel.querySelectorAll('.about-carousel-slide');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    const prevBtn = carousel.querySelector('.carousel-prev');
+    const nextBtn = carousel.querySelector('.carousel-next');
+
+    if (slides.length <= 1) return;
+
+    let current = 0;
+    let autoplayInterval;
+
+    function goToSlide(index) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (index + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+    }
+
+    function startAutoplay() {
+        autoplayInterval = setInterval(function () {
+            goToSlide(current + 1);
+        }, 5000);
+    }
+
+    function resetAutoplay() {
+        clearInterval(autoplayInterval);
+        startAutoplay();
+    }
+
+    // Arrow navigation
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function () {
+            goToSlide(current - 1);
+            resetAutoplay();
+        });
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function () {
+            goToSlide(current + 1);
+            resetAutoplay();
+        });
+    }
+
+    // Dot navigation
+    dots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+            goToSlide(parseInt(this.dataset.index));
+            resetAutoplay();
+        });
+    });
+
+    // Pause autoplay on hover
+    carousel.addEventListener('mouseenter', function () {
+        clearInterval(autoplayInterval);
+    });
+
+    carousel.addEventListener('mouseleave', function () {
+        startAutoplay();
+    });
+
+    startAutoplay();
+}
+
 
 // ===============================================
 // THEME MANAGEMENT
