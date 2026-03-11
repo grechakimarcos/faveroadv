@@ -362,7 +362,7 @@ function initContactForm() {
             const formData = new FormData(form);
 
             // AJAX Submission
-            fetch(form.action, {
+            fetch("https://formsubmit.co/ajax/SEU_TOKEN_AQUI", {
                 method: "POST",
                 body: formData,
                 headers: {
@@ -486,21 +486,7 @@ function scrollToElement(elementId) {
 // ===============================================
 
 function initImageProtection() {
-    // Disable right-click context menu on images
-    document.addEventListener('contextmenu', function (e) {
-        if (e.target.tagName === 'IMG') {
-            e.preventDefault();
-            return false;
-        }
-    });
-
-    // Disable drag and drop on images
-    document.addEventListener('dragstart', function (e) {
-        if (e.target.tagName === 'IMG') {
-            e.preventDefault();
-            return false;
-        }
-    });
+    // Image protection removed for accessibility and standard UX.
 }
 
 // ===============================================
