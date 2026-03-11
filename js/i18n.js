@@ -12,7 +12,7 @@ const dictionaries = {
             contact: 'Contato',
         },
         hero: {
-            title: 'Advocacia de Resultados com Visão Estratégica de Juiz',
+            title: 'Estratégia jurídica para proteger patrimônio, fortalecer negócios e resolver conflitos com segurança.',
             subtitle: 'Eduardo Rios Favero – Juiz Leigo e Advogado Especialista | Mais de 10 anos resolvendo casos complexos em Direito Civil, Trabalhista, Consumidor e Empresarial | Atendimento presencial em Florianópolis e online em todo Brasil',
             cta: 'Fale com um Advogado Agora',
             ctaSecondary: 'Conheça Nossa Experiência',
@@ -120,7 +120,7 @@ const dictionaries = {
             contact: 'Contact',
         },
         hero: {
-            title: 'Results-Driven Law Practice with a Judge’s Strategic Insight',
+            title: 'Legal strategy to protect assets, strengthen businesses, and resolve conflicts with security.',
             subtitle: 'Eduardo Rios Favero – Lay Judge and Specialist Attorney | Over 6 years solving complex cases in Civil, Labor, Consumer, and Corporate Law | In-person service in Florianópolis and online throughout Brazil',
             cta: 'Talk to an Attorney Now',
             ctaSecondary: 'Learn About Our Experience',
@@ -228,7 +228,7 @@ const dictionaries = {
             contact: 'Contacto',
         },
         hero: {
-            title: 'Advocacía de Resultados con Visión Estratégica de Juez',
+            title: 'Estrategia jurídica para proteger patrimonio, fortalecer negocios y resolver conflictos con seguridad.',
             subtitle: 'Eduardo Rios Favero – Juez Lego y Abogado Especialista | Más de 6 años resolviendo casos complejos en Derecho Civil, Laboral, del Consumidor y Empresarial | Atención presencial en Florianópolis y online en todo Brasil',
             cta: 'Hable con un Abogado Ahora',
             ctaSecondary: 'Conozca Nuestra Experiencia',
