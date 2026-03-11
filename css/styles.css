@@ -1678,10 +1678,7 @@ input[type="checkbox"] {
     color: var(--footer-text);
 }
 
-.developer-credit {
-    margin-top: 1.5rem;
-    text-align: center;
-}
+
 
 .credit-link {
     position: relative;
