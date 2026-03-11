@@ -88,6 +88,7 @@ function initScrollAnimations() {
         { selector: '.newsletter-content', animation: 'scaleIn' },
         { selector: '.about-photo, .about-page-photo', animation: 'slideRight' },
         { selector: '.about-content, .about-page-intro', animation: 'slideLeft' },
+        { selector: '.about-panel', animation: 'slideUp' },
     ];
 
     animatedElements.forEach(({ selector, animation }) => {

@@ -187,10 +187,16 @@ function initTheme() {
 }
 
 function updateLogo() {
-    const logoImg = document.querySelector('.logo img');
-    if (logoImg) {
-        const isDark = document.documentElement.classList.contains('dark');
-        logoImg.src = isDark ? 'img/logo_theme_dark.png' : 'img/logo_cabecalho.png';
+    const isDark = document.documentElement.classList.contains('dark');
+    
+    const headerLogo = document.querySelector('.logo img');
+    if (headerLogo) {
+        headerLogo.src = isDark ? 'img/logo_fav_dark.png' : 'img/logo_fav_white.png';
+    }
+
+    const footerLogo = document.querySelector('.footer-logo img');
+    if (footerLogo) {
+        footerLogo.src = 'img/logo_fav_dark.png';
     }
 }
 
@@ -201,8 +207,8 @@ function updateFavicon() {
     if (favicon) {
         // Favicon must match the BROWSER theme (tab background), not necessarily the site theme
         const isDark = prefersDark.matches;
-        favicon.href = isDark ? 'img/fav_icone_white.png' : 'img/fav_icone_black.png';
-        favicon.type = 'image/png';
+        favicon.href = isDark ? 'img/fav_dark.ico' : 'img/fav_white.ico';
+        favicon.type = 'image/x-icon';
     }
 }
 
