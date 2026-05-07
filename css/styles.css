@@ -805,11 +805,11 @@ input[type="checkbox"] {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(35, 52, 78, 0.7), rgba(15, 23, 42, 0.85));
+    background: linear-gradient(to bottom, rgba(35, 52, 78, 0.4), rgba(15, 23, 42, 0.55));
 }
 
 .dark .hero-overlay {
-    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.8), rgba(2, 6, 23, 0.95));
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.5), rgba(2, 6, 23, 0.65));
 }
 
 .hero-content {
@@ -1239,6 +1239,7 @@ input[type="checkbox"] {
     line-height: 1.75;
     color: var(--muted-foreground);
     margin-bottom: 0.5rem;
+    text-align: justify;
 }
 
 .about-panel-content .btn {
