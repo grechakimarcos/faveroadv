@@ -362,7 +362,7 @@ function initContactForm() {
             const formData = new FormData(form);
 
             // AJAX Submission
-            fetch("https://formsubmit.co/ajax/SEU_TOKEN_AQUI", {
+            fetch("https://formsubmit.co/ajax/juridico@efav.com.br", {
                 method: "POST",
                 body: formData,
                 headers: {
